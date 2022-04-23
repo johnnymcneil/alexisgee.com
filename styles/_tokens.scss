@@ -1,0 +1,103 @@
+@import 'functions';
+
+// Variables and Tokens
+//
+// Provides global sass variables for the application.
+
+
+// Colors
+$black: #080808;
+$white: #fafafa;
+
+$primary: #0080ff;
+$secondary: #ad488e;
+$success: #25ad25;
+$info: #e9d925;
+$warning: #ffbb00;
+$danger: #e72364;
+$light: #e0e0e0;
+$dark: #001a33;
+
+
+// Defaults
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$font-size: 12pt;
+$font-size-small: 8pt;
+$font-size-sub-sup: 6pt;
+
+$font-weight: 400;
+$font-weight-bolder: 500;
+
+
+// Body
+$bg-body: $light;
+$color-body: $dark;
+$font-size-body: $font-size;
+$line-height-body: 1.15rem;
+$text-align-body: start;
+
+
+// DT
+$dt-font-weight: $font-weight-bolder;
+
+
+// Headings
+$h1-font-size: 5.25rem;
+$h2-font-size: 4.5rem;
+$h3-font-size: 3.75rem;
+$h4-font-size: 3rem;
+$h5-font-size: 2.25rem;
+$h6-font-size: 1.5rem;
+
+$headings-margin-bottom: 1.5rem;
+$headings-font-family: $font-family;
+$headings-font-style: normal;
+$headings-font-weight: bold;
+$headings-line-height: 1.15;
+$heading-color: $color-body;
+
+
+// Horizontal Rules
+$hr-margin-y: 2rem;
+$hr-color: shade-color($light, 15%);
+$hr-border-width: 1pt;
+$hr-border-color: $hr-color;
+$hr-opacity: 1;
+
+
+// Links
+$link-color: $primary;
+$link-hover-color: tint-color($primary, 10%);
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+
+// Paragraphs
+$paragraph-margin-bottom: 2rem;
+
+
+// Spacers
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,
+  2: $spacer * .75,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 5,
+);
+  
+  
+// Transitions
+$cubic-bezier: cubic-bezier(.5,0,0,1);
+
+$transition-duration: 250ms;
+$transition-duration-fast: 100ms;
+$transition-duration-slow: 400ms;
+
+
+
+// Options
+$enable-button-pointers: true;
+$enable-smooth-scroll: true;

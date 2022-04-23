@@ -1,0 +1,80 @@
+@import '../../styles/assembly';
+
+
+// Neumorphism
+
+
+// NeuBtn
+
+.neu-btn {
+  @include transitionize(normal, box-shadow, color, border);
+  @include neumorphic-shadow();
+  
+  $border: 1px solid $light;
+  border: $border;
+  
+  background: $light;
+  border-radius: 50px;
+  
+  $padding-y: map-get($spacers, 2);
+  $padding-x: map-get($spacers, 4);
+
+  padding-block: $padding-y;
+  padding-inline: $padding-x;
+  margin-block-end: $padding-y;
+  
+  vertical-align: middle;
+  
+  &:hover {
+    box-shadow:  none;
+    text-decoration: none;
+    border: 1px solid shade-color($light, 10%);
+  }
+  
+  &:active {
+    @include neumorphic-shadow(inset);
+    border: $border;
+  }
+  
+  &.neu-btn-active {
+    @include neumorphic-shadow(inset);
+    border: $border;
+
+    &:hover {
+      @include neumorphic-shadow(inset);
+      border: $border;
+    }
+  }
+}
+
+
+// NeuNav
+.neu-nav {
+  padding-top: $spacer;
+
+  .neu-nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: $spacer;
+    column-gap: $spacer * 3;
+
+    //NeuNavItem
+
+    .neu-nav-item {
+      flex-grow: 0;
+      flex-shrink: 0;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      min-height: 100%;
+
+      a {
+        color: $dark;
+        text-decoration: none;
+        font-weight: 500;
+      }
+    }    
+  }
+}

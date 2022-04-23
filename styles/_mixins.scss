@@ -1,0 +1,11 @@
+@mixin transitionize($duration, $properties...){
+  transition-duration: durationize($duration);
+  transition-timing-function: $cubic-bezier;
+  transition-property: $properties;
+}
+
+@mixin neumorphic-shadow($inset: false) {
+  $inset: if($inset != false, inset, null);
+  box-shadow:  $inset 5px 5px 10px #bebebe,
+               $inset -5px -5px 10px #ffffff;
+}

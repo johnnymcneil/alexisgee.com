@@ -1,0 +1,40 @@
+// Global Classes
+
+.container, .container-fluid {
+  padding-inline: $spacer;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: $spacer;
+  row-gap: $spacer;
+  
+  .grid-item {
+    flex-shrink: 0;
+    background-color: $white;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .grid-item-blue {
+    flex-shrink: 0;
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .grid-item-red {
+    flex-shrink: 0;
+    background-color: red;
+    height: 300px;
+    width: 300px;
+  }
+}

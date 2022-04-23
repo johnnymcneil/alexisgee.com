@@ -1,0 +1,28 @@
+@import '../styles/assembly';
+
+
+// Layout Component Stylesheet
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding-block: $spacer * 3;
+
+  .header-title {
+    @include font-size($h1-font-size);
+    align-self: flex-start;
+    font-weight: 100;
+    // font-size: 50pt;
+    text-align: start;
+  }
+
+  .header-nav {
+    align-self: flex-start;
+  }
+}
+
