@@ -1,0 +1,9 @@
+{
+  "/graphic-patterns": "pages/graphic-patterns.html",
+  "/": "pages/index.html",
+  "/_app": "pages/_app.js",
+  "/ink-drawings": "pages/ink-drawings.html",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

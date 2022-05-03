@@ -1,0 +1,12 @@
+// Global Classes
+
+.container, .container-fluid {
+  padding-inline: $spacer * 2;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  
+}

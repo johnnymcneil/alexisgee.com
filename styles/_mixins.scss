@@ -1,0 +1,23 @@
+/*
+* Mixins
+*/
+
+@mixin night-life-bg-gradient($opacity: 1) {
+  background: linear-gradient(to bottom right, rgba($bg-night-light, $opacity) 0%, 65%, rgba($bg-night-dark, $opacity) 100%);
+}
+
+@mixin transitionize($duration, $properties...){
+  transition-duration: durationize($duration);
+  transition-timing-function: $cubic-bezier;
+  transition-property: $properties;
+}
+
+@mixin neumorphic-shadow($inset: false, $scale: 1, $opacity: 1) {
+  $inset: if($inset != false, inset, null);
+  $dist: calc(5px * $scale);
+  $dist-inverse: calc($dist * -1);
+  $spread: calc(10px * $scale);
+  
+  box-shadow:  $inset $dist $dist $spread rgba($black, $opacity),
+               $inset $dist-inverse $dist-inverse $spread rgba($neu-shadow-light, $opacity);
+}

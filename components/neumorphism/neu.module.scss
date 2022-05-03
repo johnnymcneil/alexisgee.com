@@ -1,0 +1,84 @@
+@import '../../styles/assembly';
+
+
+// Neumorphism
+
+
+// NeuBtn
+
+.neu-btn {
+  @include transitionize(normal, box-shadow, color, border);
+  @include neumorphic-shadow();
+  
+  $border: 1px solid $neu-material;
+  border: $border;
+  
+  background: $neu-material;
+  border-radius: 40pt;
+  
+  $padding-y: map-get($spacers, 2);
+  $padding-x: map-get($spacers, 4);
+
+  padding-block: $padding-y;
+  padding-inline: $padding-x;
+  margin-block-end: $padding-y;
+  
+  vertical-align: middle;
+
+  text-shadow: -1pt -1pt $black;
+  
+  &:hover {
+    box-shadow:  none;
+    text-decoration: none;
+    border: 1px solid shade-color($neu-material, 10%);
+    background-color: $neu-material-hover;
+    border-color: $neu-material-hover;
+  }
+  
+  &:active {
+    @include neumorphic-shadow(inset);
+    border: $border;
+  }
+  
+  &.neu-btn-active {
+    @include neumorphic-shadow(inset);
+    border: $border;
+
+    &:hover {
+      @include neumorphic-shadow(inset);
+      border: $border;
+    }
+  }
+}
+
+
+// NeuNav
+.neu-nav {
+  padding-top: $spacer;
+
+  .neu-nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: $spacer;
+    column-gap: $spacer * 3;
+
+    //NeuNavItem
+
+    .neu-nav-item {
+      flex-grow: 0;
+      flex-shrink: 0;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      min-height: 100%;
+
+      a {
+        color: $light;
+        text-decoration: none;
+        font-weight: 500;
+      }
+    }    
+  }
+}

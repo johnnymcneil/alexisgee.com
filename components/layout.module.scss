@@ -1,0 +1,73 @@
+@import '../styles/assembly';
+
+
+/*
+* Layout Component Stylesheet
+*/
+
+
+.page {
+  content: "";
+  display: block;
+  
+  position: sticky;
+  top: 0;
+  
+  width: 100vw;
+  min-height: 100%;
+  
+  @include night-life-bg-gradient;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding-block: $spacer * 4;
+
+    .header-title {
+      @include font-size($h1-font-size);
+      align-self: flex-start;
+      font-weight: 700;
+      // font-size: 50pt;
+      text-align: start;
+      text-shadow:
+        -10px -5px 1px hsl(0, 100%, 35%),
+        -15px 0px 1px hsl(50, 100%, 35%),
+        10px 5px 1px hsl(100, 100%, 35%),
+        5px 10px 1px hsl(150, 100%, 35%),
+        0px 15px 1px hsl(200, 100%, 35%),
+        -5px 10px 1px hsl(250, 100%, 35%),
+        -10px 5px 1px hsl(300, 100%, 35%);
+
+    }
+
+    .header-nav {
+      align-self: flex-start;
+      
+    }
+  }
+
+  .footer {
+    $color: rgba($light, 0.8);
+    color: $color;
+    font-size: $font-size-small;
+
+    padding-block: $spacer * 4;
+    
+    a {
+      color: $color;
+      text-decoration: underline;
+
+      &:hover {
+        color: $primary;
+        text-decoration: none;
+      }
+      
+    }
+  }
+}

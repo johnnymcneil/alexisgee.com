@@ -1,0 +1,15 @@
+@import 'assembly';
+@import 'normalize';
+
+
+// Global Stylesheet
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $light;
+  position: relative;
+  z-index: -900;
+}
