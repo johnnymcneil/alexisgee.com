@@ -2,11 +2,16 @@ import Head from 'next/head'
 import ImageGrid from '../components/imageGrid'
 import Layout from '../components/layout'
 import styles from '../styles/Assembly.module.scss'
-import importImages from '../functions/importImages'
+
 
 export default function Home() {
-  const TITLE = 'Patterns in Nature'  
-  const NATURE_IMAGES = importImages(require.context('../assets/nature', false, /\.(png|jpe?g|svg)$/))
+  const TITLE = 'Patterns in Nature'
+  const NATURE_IMAGES = [
+    'La_Flama.jpg',
+    'Moss_on_Bark.jpg',
+    'Red_Flowers.jpg',
+    'Succulent.jpg'
+  ]
 
   return (
     <>
@@ -16,7 +21,7 @@ export default function Home() {
 
       <Layout>
         <div className={styles['container']}>
-          <ImageGrid imageSet={ NATURE_IMAGES } />
+          <ImageGrid set={'nature'} imageList={ NATURE_IMAGES } />
         </div>
       </Layout>
     </>
