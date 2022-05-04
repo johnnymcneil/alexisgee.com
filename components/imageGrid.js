@@ -8,18 +8,18 @@ export default function ImageGrid({ imageSet }) {
   return (
     <div className={styles['grid-container']}>
       {
-        imageSet.map(function(image) {
+        imageSet.map((image) => {
           const IMG_NAME = path.parse(image).name.split('__')[0].replaceAll('_', ' ')
-          const key = new uuidv4();
+          const KEY = new uuidv4();
+
           return (
-          <div
-            key={key}
-            className={styles['grid-item']}
-            style={{
-              backgroundImage: 'url(' + image + ')'
-            }}>
-            <p className={styles.imgTitle}>{ IMG_NAME }</p>
-          </div>)
+            <div
+              key={ KEY }
+              className={styles['grid-item']}
+              style={{ backgroundImage: 'url(' + image + ')' }}>
+              <p className={styles.imgTitle}>{ IMG_NAME }</p>
+            </div>
+          )
         })
       }
     </div>
