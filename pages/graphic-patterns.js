@@ -4,7 +4,17 @@ import Layout from '../components/layout'
 import styles from '../styles/Home.module.scss'
 
 export default function GraphicPatterns() {
-  const title = 'Graphic Patterns'
+  const TITLE = 'Graphic Patterns'
+  const GRAPHIC_IMAGES = [
+    '3lectric Alley.jpg',
+    'High Noon.jpg',
+    'Occult Icon.jpg',
+    'Rhombus.jpg',
+    'Saturday Morning.jpg',
+    'Tin Ceiling.jpg',
+    'Yule Fool.jpg',
+  ]
+
   return (
     <>
       <Head>
