@@ -6,6 +6,7 @@ import styles from '../styles/Assembly.module.scss'
 
 export default function GraphicPatterns() {
   const TITLE = 'Graphic Patterns'
+<<<<<<< HEAD
   const GRAPHIC_IMAGES = [
     '90s.jpg',
     'Halloween_Mandala.jpg',
@@ -16,6 +17,20 @@ export default function GraphicPatterns() {
     'Rat_Stallion.jpg',
     'Turkey.jpg'
   ]
+=======
+<<<<<<< Updated upstream
+  const GRAPHIC_IMAGES = [
+    '3lectric Alley.jpg',
+    'High Noon.jpg',
+    'Occult Icon.jpg',
+    'Rhombus.jpg',
+    'Saturday Morning.jpg',
+    'Tin Ceiling.jpg',
+    'Yule Fool.jpg',
+  ]
+=======
+>>>>>>> Stashed changes
+>>>>>>> dev
 
   return (
     <>
