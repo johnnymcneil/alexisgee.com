@@ -16,6 +16,7 @@
   row-gap: $gap;
   
   .grid-item {
+    position: relative;
     flex-shrink: 0;
 
     display: flex;
@@ -34,6 +35,10 @@
 
     cursor: pointer;
     user-select: none;
+
+    img {
+      pointer-events: none;
+    }
 
     &:hover {
       p.imgTitle {
@@ -54,11 +59,6 @@
       top: 85%;
 
       width: fit-content;
-<<<<<<< HEAD
-      
-=======
-
->>>>>>> dev
       margin-block-start: 0;
       margin-block-end: $spacer * 1.5;
       margin-inline: 0;
@@ -68,18 +68,12 @@
 
       border-radius: 40pt;
 
-      
       $fs: $font-size * 1.5;
       font-size: $fs;
       line-height: $fs;
       
       letter-spacing: 1.25pt;
-<<<<<<< HEAD
-      text-transform: uppercase;
-=======
->>>>>>> dev
       text-shadow: -1pt -1pt $black;
-      background-clip: text;
 
       color: $white;
       

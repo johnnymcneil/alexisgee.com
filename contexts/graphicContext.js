@@ -1,4 +1,4 @@
-export default GraphicContext = {
+export const GraphicContext = {
   directory: "graphic",
   images: [
     {

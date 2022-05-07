@@ -1,4 +1,4 @@
-export default InkContext = {
+export const InkContext = {
   directory: "ink",
   images: [
     {
