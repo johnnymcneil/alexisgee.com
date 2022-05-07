@@ -12,6 +12,7 @@ import DripPick from '../public/images/ink/Drip Pick.jpg'
 
 export default function InkDrawings() {
   const TITLE = 'Ink Drawings'
+<<<<<<< Updated upstream
   const INK_IMAGES = [
     BabyBlue,
     Venus,
@@ -20,6 +21,8 @@ export default function InkDrawings() {
     Cand1d,
     DripPick,
   ]
+=======
+>>>>>>> Stashed changes
 
   return (
     <>

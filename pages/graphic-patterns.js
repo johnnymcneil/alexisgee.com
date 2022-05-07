@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss'
 
 export default function GraphicPatterns() {
   const TITLE = 'Graphic Patterns'
+<<<<<<< Updated upstream
   const GRAPHIC_IMAGES = [
     '3lectric Alley.jpg',
     'High Noon.jpg',
@@ -14,6 +15,8 @@ export default function GraphicPatterns() {
     'Tin Ceiling.jpg',
     'Yule Fool.jpg',
   ]
+=======
+>>>>>>> Stashed changes
 
   return (
     <>

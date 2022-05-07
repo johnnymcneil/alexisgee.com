@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/layout'
+<<<<<<< Updated upstream
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -24,6 +25,13 @@ export default function Home() {
     'Velour.jpg',
   ]
 
+=======
+import styles from '../styles/Assembly.module.scss'
+import { NatureContext } from '../contexts/natureContext'
+
+export default function Home() {
+  const TITLE = 'Patterns in Nature'
+>>>>>>> Stashed changes
   return (
     <>
       <Head>
@@ -31,6 +39,7 @@ export default function Home() {
       </Head>
 
       <Layout>
+<<<<<<< Updated upstream
         <div className={styles['container-fluid']}>
           <div className={styles['grid-container']}>
             <div className={styles['grid-item']}></div>
@@ -39,6 +48,10 @@ export default function Home() {
             <div className={styles['grid-item']}></div>
             <div className={styles['grid-item']}></div>
           </div>
+=======
+        <div className={styles['container']}>
+          <ImageGrid context={ NatureContext } />
+>>>>>>> Stashed changes
         </div>
       </Layout>
     </>
