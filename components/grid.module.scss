@@ -4,32 +4,36 @@
 * ImageGrid Component Stylesheet
 */
 
+
 .grid-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
 
+  
   $gap: $spacer * 3;
-
   column-gap: $gap;
   row-gap: $gap;
   
   .grid-item {
     position: relative;
 
-    $dimension: calc(100% / 2 - $gap / 2);
-    width: $dimension;
-    
     aspect-ratio: 1;
-    border-radius: 25% / 12.5%;
+    border-radius: $spacer;
     overflow: hidden;
     
     @include neumorphic-shadow($scale: 2);
     background-size: cover;
 
     cursor: pointer;
-
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      $dimension: calc(100% / 2 - $gap / 2);
+      width: $dimension;
+    }
     &:hover {
       p.imgTitle {
         $scale: 100%;

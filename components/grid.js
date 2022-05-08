@@ -1,5 +1,5 @@
 import styles from './grid.module.scss'
-import ImageWithModal from './imageWithModal';
+import Thumbnail from './thumbnail';
 
 
 export default function Grid({ context }) {
@@ -8,7 +8,7 @@ export default function Grid({ context }) {
   // Create an Image Modal for each Image
   context.images.forEach(
     (image) => {
-      gridItems.push(<div className={ styles['grid-item'] }><ImageWithModal image={image} /></div>)
+      gridItems.push(<div className={ styles['grid-item'] }><Thumbnail image={image} /></div>)
     }
   )
 

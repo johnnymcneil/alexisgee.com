@@ -47,6 +47,7 @@
       position: absolute;
       top: 0;
       right: 0;
+      z-index: 920;
       font-size: 24pt;
       &:hover {
         transform: scale(110%);
@@ -58,16 +59,17 @@
       position: relative;
       display: flex;
       height: 100%;
-      width: fit-content;
+      width: 100%;
       transform: scale(80%);
       
       .modal-image {
         max-height: 100%;
+        max-width: 100%;
+        height: auto;
         width: auto;
-        
+        aspect-ratio: auto;
         margin: auto;
     
-        cursor: default;
         filter: drop-shadow(0 0 50px $black) !important;
         
       }
@@ -77,16 +79,19 @@
         top: 0;
         left: 0;
         z-index: 910;
-        
-        width: 100%;
-        padding: $spacer * 2;
-
+        background: linear-gradient(to bottom right, rgba($black, 0.6) 0%, 50%, rgba($black, 0) 100%);
+        opacity: 1;
         cursor: default;
         filter: drop-shadow(0 0 10px $black);
+
+        line-height: 1.0;
+        letter-spacing: 1pt;
         
         font-size: 24pt;
-        background: linear-gradient(to bottom, rgba($black, 0.6) 0%, 50%, rgba($black, 0) 100%);
-        opacity: 0;
+        @include breakpoint(md) {
+          font-size: 32pt;
+          font-weight: 600;
+        }
         
         @include transitionize(fast, all);
         

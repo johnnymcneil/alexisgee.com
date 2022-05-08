@@ -5,7 +5,7 @@ import styles from './imageWithModal.module.scss'
 import { v4 as uuidv4 } from 'uuid'
 import { ModalContext } from '../contexts/modalContext';
 
-export default function ImageWithModal({ image }) {
+export default function Thumbnail({ image }) {
   const KEY = new uuidv4()
   
   return (
@@ -21,7 +21,9 @@ export default function ImageWithModal({ image }) {
           src={ image.file }
           layout='fill'
           objectFit='cover'
-          quality={100}/>
+          quality={80}
+          sizes=''
+        />
         <p className={ styles.title }>{ image.title }</p>
       </div>
     )}
