@@ -17,11 +17,6 @@
   
   .grid-item {
     position: relative;
-    flex-shrink: 0;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 
     $dimension: calc(100% / 2 - $gap / 2);
     width: $dimension;
@@ -34,11 +29,6 @@
     background-size: cover;
 
     cursor: pointer;
-    user-select: none;
-
-    img {
-      pointer-events: none;
-    }
 
     &:hover {
       p.imgTitle {

@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
-import ImageGrid from '../components/imageGrid'
+import Grid from '../components/grid'
+import { ModalFactory } from '../components/modalFactory'
 
 import styles from '../styles/Assembly.module.scss'
+
 import { InkContext } from '../contexts/inkContext'
 
 export default function InkDrawings() {
@@ -16,9 +18,10 @@ export default function InkDrawings() {
 
       <Layout>
         <div className={styles['container']}>
-          <ImageGrid context={ InkContext } />
+          <Grid context={ InkContext } />
         </div>
       </Layout>
+      <ModalFactory context={ InkContext } />
     </>
   )
 }

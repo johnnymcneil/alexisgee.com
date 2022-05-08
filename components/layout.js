@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from './layout.module.scss'
 import NeuNav from './neumorphism/NeuNav'
 import NeuNavItem from './neumorphism/NeuNavItem'

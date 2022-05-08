@@ -1,33 +1,41 @@
+import ElectricAlley from '../public/images/graphic/3lectric Alley.jpg'
+import HighNoon from '../public/images/graphic/High Noon.jpg'
+import OccultIcon from '../public/images/graphic/Occult Icon.jpg'
+import Rhombus from '../public/images/graphic/Rhombus.jpg'
+import SaturdayMorning from '../public/images/graphic/Saturday Morning.jpg'
+import TinCeiling from '../public/images/graphic/Tin Ceiling.jpg'
+import YuleFool from '../public/images/graphic/Yule Fool.jpg'
+
 export const GraphicContext = {
   directory: "graphic",
   images: [
     {
       title: '3lectric Alley',
-      file: '3lectric Alley.jpg',
+      file: ElectricAlley
     },
     {
       title: 'High Noon',
-      file: 'High Noon.jpg',
+      file: HighNoon
     },
     {
       title: 'Occult Icon',
-      file: 'Occult Icon.jpg',
+      file: OccultIcon
     },
     {
       title: 'Rhombus',
-      file: 'Rhombus.jpg',
+      file: Rhombus
     },
     {
       title: 'Saturday Morning',
-      file: 'Saturday Morning.jpg',
+      file: SaturdayMorning
     },
     {
       title: 'Tin Ceiling',
-      file: 'Tin Ceiling.jpg',
+      file: TinCeiling
     },
     {
       title: 'Yule Fool',
-      file: 'Yule Fool.jpg',
+      file: YuleFool
     },
   ]
 }

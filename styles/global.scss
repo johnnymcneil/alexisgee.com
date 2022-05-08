@@ -10,6 +10,7 @@ html {
 
 body {
   color: $light;
+  overflow-x: hidden;
   position: relative;
   z-index: -900;
 }

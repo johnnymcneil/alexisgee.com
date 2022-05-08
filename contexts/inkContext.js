@@ -1,29 +1,36 @@
+import BabyBlue from '../public/images/ink/Baby Blue.jpg'
+import BirthOfVenusFlytrap from '../public/images/ink/Birth of Venus Flytrap.jpg'
+import BreakfastForDinner from '../public/images/ink/Breakfast for Dinner.jpg'
+import BugOut from '../public/images/ink/Bug Out.jpg'
+import Cand1d from '../public/images/ink/Cand1d.jpg'
+import DripPick from '../public/images/ink/Drip Pick.jpg'
+
 export const InkContext = {
   directory: "ink",
   images: [
     {
       title: "Baby Blue",
-      file: "Baby Blue.jpg"
+      file: BabyBlue
     },
     {
       title: "Birth of Venus Flytrap",
-      file: "Birth of Venus Flytrap.jpg"
+      file: BirthOfVenusFlytrap
     },
     {
       title: "Breakfast for Dinner",
-      file: "Breakfast for Dinner.jpg"
+      file: BreakfastForDinner
     },
     {
       title: "Bug Out",
-      file: "Bug Out.jpg"
+      file: BugOut
     },
     {
       title: "Cand1d",
-      file: "Cand1d.jpg"
+      file: Cand1d
     },
     {
       title: "Drip Pick",
-      file: "Drip Pick.jpg"
+      file: DripPick
     }
   ]
 }

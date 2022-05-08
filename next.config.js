@@ -5,6 +5,11 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    images: {
+      layoutRaw: true,
+    }
+  }
 }
 
 

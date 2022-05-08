@@ -1,0 +1,64 @@
+@import '../styles/assembly';
+
+/*
+* Image With Modal Component Stylesheet
+*/
+
+
+  
+.thumbnail-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  
+  height: 100%;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &:hover {
+    p.title {
+      $scale: 100%;
+      opacity: 1;
+      transform: scale($scale);
+    }
+  }
+
+  p.title {
+    // start Transitions
+    @include transitionize(normal, all);
+    opacity: 0;
+    transform: scale(0.5);
+    // end Transitions
+
+    left: 50%;
+    top: 85%;
+
+    width: fit-content;
+    margin-block-start: 0;
+    margin-block-end: $spacer * 1.5;
+    margin-inline: 0;
+
+    padding-block: $spacer * 0.8;
+    padding-inline: $spacer * 1.4;
+
+    border-radius: 40pt;
+
+    $fs: $font-size * 1.5;
+    font-size: $fs;
+    line-height: $fs;
+    
+    letter-spacing: 1.25pt;
+    text-shadow: -1pt -1pt $black;
+
+    color: $white;
+    
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    
+    @include night-life-bg-gradient($opacity: 0.8);
+    
+  }
+}

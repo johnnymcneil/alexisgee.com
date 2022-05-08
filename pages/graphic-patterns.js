@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
-import ImageGrid from '../components/imageGrid'
+import Grid from '../components/grid'
+import { ModalFactory } from '../components/modalFactory'
 
 import styles from '../styles/Home.module.scss'
+
 import { GraphicContext } from '../contexts/graphicContext'
 
 
@@ -17,9 +19,10 @@ export default function GraphicPatterns() {
 
       <Layout>
         <div className={styles['container']}>
-          <ImageGrid context={ GraphicContext } />
+          <Grid context={ GraphicContext } />
         </div>
       </Layout>
+      <ModalFactory context={ GraphicContext } />
     </>
   )
 }
